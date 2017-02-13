@@ -11,4 +11,4 @@ def word_histogram(input):
 
 
 
-print word_histogram("James is a student at Digital Crafts. He is twenty nine. He needs more duplicate words in this paragraph. is is  nine more.")
+print word_histogram("to be or not to be")

@@ -1,5 +1,5 @@
 #Phonebook
-import os
+import os, pickle
 
 def mainMenu():
 
@@ -89,7 +89,11 @@ def quit():
 
 
 
-
-
-db = {}
+if os.path.exists("pb.pickle"):
+    with open("pb.pickle") as f1:
+        db = pickle.load(f1)
+else:
+    db = {}
 mainMenu()
+with open("pb.pickle", 'w') as f1:
+    pickle.dump(db, f1)

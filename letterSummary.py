@@ -12,4 +12,4 @@ def letter_histogram(word):
 
 
 
-print letter_histogram('Jammesss')
+print letter_histogram('Banana')
